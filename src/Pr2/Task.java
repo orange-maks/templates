@@ -38,7 +38,7 @@ public class Task {
         humans.stream().filter(new Predicate<Human>() {
             @Override
             public boolean test(Human human) {
-                return human.birthDate.compareTo(LocalDate.of(2000, 6, 24)) < 0;
+                return human.birthDate.compareTo(LocalDate.of(2000, 6, 24)) > 0;
             }
         }).forEach(System.out::println);
     }
